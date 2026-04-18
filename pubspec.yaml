@@ -1,0 +1,35 @@
+name: sleep_monitor
+description: "A Flutter-based baby monitor project with Computer Vision integration."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.7 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # --- ADDED FOR YOUR PROJECT ---
+  http: ^1.1.0                          # To talk to the Python Backend
+  video_player: ^2.8.1                  # To show the baby video demo
+  sqflite: ^2.3.0                       # For the Alarm Log database
+  path: ^1.9.0                          # Helper for database paths
+  audioplayers: ^5.2.1                  # To play the alarm siren
+  flutter_local_notifications: ^17.0.0  # For push alerts (The one causing your error!)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # --- ASSETS SECTION ---
+  # Make sure these folders/files actually exist in your project root!
+  assets:
+    - assets/logo.png
+    - assets/siren.mp3
+    - assets/baby_video.mp4
