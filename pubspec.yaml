@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
 
+
   # --- ADDED FOR YOUR PROJECT ---
   http: ^1.1.0                          # To talk to the Python Backend
   video_player: ^2.8.1                  # To show the baby video demo
@@ -18,6 +19,7 @@ dependencies:
   path: ^1.9.0                          # Helper for database paths
   audioplayers: ^5.2.1                  # To play the alarm siren
   flutter_local_notifications: ^17.0.0  # For push alerts (The one causing your error!)
+  image_picker: ^1.0.4
 
 dev_dependencies:
   flutter_test:
